@@ -183,7 +183,6 @@ button#dropdownMenuButton2:focus {
 
 header {
   background-color: var(--dark-white);
-  height: 120px;
   font-weight: 500;
   font-size: 20px;
   line-height: 20px;
@@ -191,6 +190,7 @@ header {
 
 .navbar {
   position: initial;
+  height: 120px;
 }
 
 .navbar-nav {
