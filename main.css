@@ -813,6 +813,20 @@ search {
 
 /* NEWS CARD END */
 
+/* SMART TALK START */
+
+#smart_talk {
+  padding: 70px 0;
+  text-align: center;
+}
+
+#smart_talk h1 {
+  font-size: 48px;
+  font-weight: 600;
+}
+
+/* SMART TALK END */
+
 /* PRODUCT CARD SLIDER GROUP END */
 
 /* MAIN END */
