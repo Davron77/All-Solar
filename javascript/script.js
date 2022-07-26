@@ -48,12 +48,6 @@ user.addEventListener("click", function () {
   }
 });
 
-// registerBtn.addEventListener("click", function () {
-//   cardLogin.classList.remove("catalog-menu-open-scale");
-//   cardRegister.classList.toggle("catalog-menu-open-scale");
-//   ClasscardRegister = true;
-// });
-
 if (catalogBtn) {
   catalogBtn.addEventListener("click", function () {
     catalogMenu.classList.toggle("catalog-menu-open-scale");
