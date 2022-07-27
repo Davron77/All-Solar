@@ -41,15 +41,12 @@ var swiper = new Swiper(".clinet_brand", {
   },
   breakpoints: {
     0: {
-      slidesPerView: 1.1,
+      slidesPerView: 1,
     },
     500: {
-      slidesPerView: 1.5,
-    },
-    767: {
       slidesPerView: 2,
     },
-    991: {
+    900: {
       slidesPerView: 3,
     },
     1200: {

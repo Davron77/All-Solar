@@ -95,7 +95,7 @@
                             </div>
                         </div>
                         <div class="col-8 col-lg-2 col-xl-1 text-center text-lg-start p-0">
-                            <a class="navbar-brand" href="/"><img src="/images/mount-logo.svg" alt="Logo"></a>
+                            <a class="navbar-brand" href="/"><img src="/images/logo_light.png" alt="Logo"></a>
                         </div>
                         <div class="col-2 order-lg-2 col-lg-1 col-xl-1 p-0">
                             <div class="navbar-left">
@@ -117,7 +117,7 @@
                         </div>
                     </div>
                 </nav>
-                <div class="search w-50 mx-auto">
+                <div class="search">
                     <form>
                         <div class="d-flex position-relative">
                             <span class="input-group-text"><i class="fa-solid fa-magnifying-glass"></i></span>
@@ -382,6 +382,12 @@
         <div id="#home-slider" class="home-slider">
             <div class="container">
                 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="0"
+                            class="active" aria-current="true" aria-label="Slide 1"></button>
+                        <button type="button" data-bs-target="#carouselExampleIndicators" data-bs-slide-to="1"
+                            aria-label="Slide 2"></button>
+                    </div>
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img src="/images/slider/1.jpg" class="d-block w-100" alt="Slider">
@@ -451,7 +457,6 @@
         </div>
     </div>
     </div>
-    <h1 id="target">0</h1>
     <main>
         <div id="home_info_count">
             <div class="container">
@@ -550,7 +555,21 @@
                                 <img src="/images/clinets/3.png" alt="">
                             </div>
                         </div>
-
+                        <div class="swiper-slide">
+                            <div class="count_card_item">
+                                <img src="/images/clinets/1.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="count_card_item">
+                                <img src="/images/clinets/2.png" alt="">
+                            </div>
+                        </div>
+                        <div class="swiper-slide">
+                            <div class="count_card_item">
+                                <img src="/images/clinets/3.png" alt="">
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -558,11 +577,11 @@
         <div id="home_contact">
             <div class="container">
                 <div class="row">
-                    <div class="col-6">
+                    <div class="col-12 col-lg-6">
                         <h1>Keling, loyihangiz haqida gaplashamiz</h1>
                         <p>Ma'lumotlaringizni qoldiring va biz tez orada siz bilan bog’lanamiz</p>
                     </div>
-                    <div id="home_contact_form" class="col-6">
+                    <div id="home_contact_form" class="col-12 col-lg-6">
                         <form>
                             <div class="mb-3">
                                 <input type="text" placeholder="Abdurahmon" class="form-control" id="exampleInputEmail1"
@@ -631,52 +650,17 @@
                 </div>
             </div>
         </div>
-        <div id="smart_talk">
-            <div class="container">
-                <div class="row">
-                    <div class="col-2">
-                        <a class="navbar-brand" href="/">
-                            <img src="/images/mount-logo.svg" alt="Logo">
-                        </a>
-                    </div>
-                    <div class="col-8">
-                        <h1>Muqobil energiya deb quyish kerak</h1>
-                    </div>
-                    <div class="col-2">
-                        <div>
-                            <a href="#">
-                                <i class="fa-brands fa-telegram"></i>
-                            </a>
-                            <a href="#">
-                                <i class="fa-brands fa-instagram"></i>
-                            </a>
-                            <a href="#">
-                                <i class="fa-brands fa-facebook"></i>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
     </main>
-    <footer id="footer">
+    <footer id="footer" class="pt-4">
         <div class="container">
             <div class="row d-flex align-items-center">
-                <div class="py-3 col-2">
-                    <a class="navbar-brand" href="/"><img src="/images/mount-logo.svg" alt="Logo"></a>
+                <div class="col-12 col-md-6 col-lg-3 text-center">
+                    <a href="/"><img src="/images/logo.png" alt="Logo"></a>
                 </div>
-                <div class="py-3 col-7">
-                    <div class="navbar-nav w-100 flex-row">
-                        <a class="nav-link" href="/pages/company.html">ABOUT</a>
-                        <a class="nav-link" href="/pages/all-products.html">PRODUCTS</a>
-                        <a class="nav-link" href="/pages/news.html">PORTFOLIOS</a>
-                        <a class="nav-link" href="/pages/news.html">NEWS</a>
-                        <a class="nav-link" href="/pages/suport.html">VACANSIES</a>
-                        <a class="nav-link" href="/pages/contact.html">CALCULATOR</a>
-                        <a class="nav-link" href="/pages/contact.html">CONTACT</a>
-                    </div>
+                <div class="py-3 col-12 col-md-6 col-lg-6 text-center">
+                    <h1>Muqobil energiya</h1>
                 </div>
-                <div class="py-3 col-3">
+                <div class="py-3 col-12 col-lg-3">
                     <div class="footer__contact">
                         <a href="tel:+998-99-353-23-70" class="footer__contactItem footer__contactPhone">
                             <i class="fa-solid fa-phone"></i>
@@ -714,26 +698,6 @@
     <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="/javascript/script.js"></script>
     <script src="/javascript/swiper.js"></script>
-    <script>
-        let endVal = 2000;
-        let demo = new CountUp('target', endVal, { enableScrollSpy: true });
-
-
-        const input = (id) => {
-            return document.getElementById(id);
-        };
-        input('start').onclick = () => {
-            if (!demo.error) {
-                demo.start(() => {
-                    demo = new CountUp('target', 26719.3, { decimalPlaces: 2 });
-                    demo.start();
-                });
-            } else {
-                document.getElementById('error').innerHTML = demo.error;
-            }
-        };
-
-    </script>
 </body>
 
 </html>
