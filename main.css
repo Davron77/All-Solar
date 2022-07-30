@@ -1576,6 +1576,77 @@ footer p {
 
 /* ABOUT PAGE END */
 
+/* CALCULATOR PAGE START */
+
+.calculator_title {
+  font-size: 36px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.calculator_dashboard_input input {
+  height: 40px;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.calc {
+  margin-bottom: 40px;
+}
+
+.calc .input_title {
+  font-size: 24px;
+  margin-bottom: 25px;
+}
+
+.pribors {
+  max-height: 400px;
+  overflow: auto;
+  padding-top: 20px;
+}
+
+.calc .input .pribor {
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+  opacity: 0.5;
+  -webkit-transition: ease 0.5s;
+  -o-transition: ease 0.5s;
+  transition: ease 0.5s;
+  margin-bottom: 24px;
+  border-bottom: 1px solid #d7d7d7;
+}
+
+.df {
+  display: -webkit-flex;
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: flex;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+}
+
+.ploshad,
+.res_sum,
+.emkost_bat,
+.pribors_summa {
+  margin-top: 20px;
+  text-align: right;
+  font-size: 18px;
+}
+
+.ploshad b,
+.res_sum b,
+.emkost_bat b,
+.pribors_summa b {
+  font-size: 24px;
+}
+
+/* CALCULATOR PAGE START */
+
 /* BODY END */
 
 @media (min-width: 576px) {
@@ -1865,6 +1936,10 @@ footer p {
   .pagination-lg .page-link {
     padding: 0.375rem 0.75rem;
     font-size: 1rem;
+  }
+  .df,
+  .calc .input .pribor {
+    flex-wrap: wrap;
   }
 }
 

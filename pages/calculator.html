@@ -1,0 +1,623 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEH</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <!-- ONLY CSS -->
+    <link rel="stylesheet" href="/main.css">
+</head>
+
+<body>
+    <div>
+        <div id="bg-dark">
+        </div>
+        <div id="HeaderFooter" class="header__footer">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-10 order-lg-1 col-lg-9 col-xl-6">
+                        <div class="header-footer__contact">
+                            <div class="weather">
+                                <img src="/images/weather.png" alt="">
+                                <span>31</span><span>°C</span>
+                            </div>
+                            <div class="footer__line">
+                                <span></span>
+                            </div>
+                            <a href="mailto:info@talpa.uz" class="header-footer__contactItem footer__contactMail">
+                                <i class="fa-solid fa-envelope"></i>
+                                <p>support@teh-company.com</p>
+                            </a>
+                            <div class="footer__line">
+                                <span></span>
+                            </div>
+                            <a href="tel:+998-99-353-23-70" class="header-footer__contactItem footer__contactPhone">
+                                <i class="fa-solid fa-phone"></i>
+                                <p>+998 99 897 45 04</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-2 col-lg-3 col-xl-2">
+                        <div class="footer__socials">
+                            <a href="https://www.facebook.com/" target="_blank"><i
+                                    class="fa-brands fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2"
+                                    data-bs-toggle="dropdown" aria-expanded="false">UZ </button>
+                                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+                                    <li><a class="dropdown-item" href="#">RU</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <header id="header">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg">
+                    <div class="row w-100 justify-content-between align-items-center">
+                        <div class="col-2 order-lg-1 col-lg-9 col-xl-10 sm-p-0">
+                            <button id="navbar-toggler" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <div class="navbar-bars__icons">
+                                    <i class="fa-solid fa-bars"></i>
+                                    <i class="fa-solid fa-xmark navbar-bars__icons__hide"></i>
+                                </div>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                                <div class="navbar-nav w-100">
+                                    <a class="nav-link" href="/pages/about.html">ABOUT</a>
+                                    <a class="nav-link" href="/pages/products.html">PRODUCTS</a>
+                                    <a class="nav-link" href="/pages/portfolios.html">PORTFOLIOS</a>
+                                    <a class="nav-link" href="/pages/news.html">NEWS</a>
+                                    <a class="nav-link" href="/pages/vacansies.html">VACANSIES</a>
+                                    <a class="nav-link" href="/pages/calculator.html">CALCULATOR</a>
+                                    <a class="nav-link" href="/pages/contact.html">CONTACT</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-8 col-lg-2 col-xl-1 text-center text-lg-start p-0">
+                            <a class="navbar-brand" href="/"><img src="/images/logo_light.png" alt="Logo"></a>
+                        </div>
+                        <div class="col-2 order-lg-2 col-lg-1 col-xl-1 p-0">
+                            <div class="navbar-left">
+                                <div class="navbar-icon__login ms-xl-4">
+                                    <a class="navbar-icon__loginItem" href="/pages/card.html"><i
+                                            class="fa-solid fa-bag-shopping"></i></a>
+                                    <a id="user" class="navbar-icon__loginItem" href="#"><i
+                                            class="fa-solid fa-user"></i></a>
+                                </div>
+                                <div class="navbar-dropdown">
+                                    <button class="btn btn-secondary dropdown-toggle" type="button"
+                                        id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">UZ
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+                                        <li><a class="dropdown-item" href="#">RU</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+    </div>
+    </div>
+    <main>
+        <div class="container">
+            <h1 class="calculator_title my-5">КАЛЬКУЛЯТОР</h1>
+            <div class="row">
+                <div class="col-12 col-lg-7 text-center">
+                    <h5 class="mb-3">Выработка станции</h5>
+                    <canvas id="myChart"></canvas>
+                    <div class="calculator_dashboard_input mt-5">
+                        <div class="form-group row mb-4">
+                            <div class="col-md-4 text-md-end">Годовая выработка:</div>
+                            <div class="col-md-8 d-flex">
+                                <input id="year_total" type="text" readonly="" value="29.2" class="form-control">
+                                <p style="padding-left: 10px;">
+                                    кВт*ч
+                                </p>
+                            </div>
+                        </div>
+                        <div class="form-group row mb-4">
+                            <div class="col-md-4 text-md-end">Нужное количество фотопанелей:</div>
+                            <div class="col-md-8 d-flex">
+                                <input id="count_solar_type" type="text" readonly="" value="29.2" class="form-control">
+                                <p style="padding-left: 10px;">
+                                    штук
+                                </p>
+                            </div>
+                        </div>
+                        <div class="form-group row mb-4">
+                            <div class="col-md-4 text-md-end">Стоимость станции:</div>
+                            <div class="col-md-8 d-flex">
+                                <input id="solar_price" type="text" readonly="" value="29.2" class="form-control">
+                                <p style="padding-left: 10px;">
+                                    $
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-5 mt-5">
+                    <div class="form-group row">
+                        <div class="col-md-6 text-md-end">Регион:</div>
+                        <div class="col-md-6">
+                            <select name="region" id="region" class="form-control">
+                                <option value="tashkent" disabled="" selected="">Tashkent</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-md-6 text-md-end">Станция:</div>
+                        <div class="col-md-6">
+                            <select name="station" id="station" class="form-control">
+                                <option value="1" selected="">Автономная</option>
+                                <option value="2">Сетевой</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-md-6 text-md-end">Тип фотопанели:</div>
+                        <div class="col-md-6">
+                            <select name="solar_type" id="solar_type" class="form-control">
+                                <option value="1" selected="">100 вт</option>
+                                <option value="2">150 вт</option>
+                                <option value="3">200 вт</option>
+                                <option value="4">250 вт</option>
+                                <option value="5">300 вт</option>
+                                <option value="6">350 вт</option>
+                            </select>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-md-6 text-md-end">
+                            Суточное потребление:
+                            <br>
+                            <small><a href="#pribors">(рассчитать потребление)</a></small>
+                        </div>
+                        <div class="col-md-6 d-flex flex-column pt-2">
+                            <input type="range" min="0.5" max="1000" value="3" step="0.5" class="slider"
+                                id="sliderRange">
+                            <div class="d-flex w-100 align-items-center pt-1">
+                                <input id="rangeText" type="text" readonly="" class="form-control ml-1">
+                                <p style="margin-left: 10px;" class="d-flex m-0 ps-1 align-items-center">
+                                    кВт*ч
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-md-6 text-md-end">Мощность фотомодулей:</div>
+                        <div class="col-md-6 d-flex flex-column">
+                            <input type="range" min="1" max="200" value="3" step="0.5" class="slider" id="sliderRange2">
+                            <div class="d-flex justify-content-end w-100">
+                                <input id="rangeText2" type="text" readonly="" class="form-control mt-1">
+                                <p style="margin-left: 10px;" class="d-flex m-0 ps-1 align-items-center">
+                                    кВт
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-md-6 text-md-end">Площадь фотомодулей:</div>
+                        <div class="col-md-6 d-flex">
+                            <input type="text" id="solar_square" readonly="" value="19.4" class="form-control">
+                            <p style="padding-left: 10px;">
+                                m<sup>2</sup>
+                            </p>
+                        </div>
+                    </div>
+                    <div class="form-group row">
+                        <div class="col-md-6 text-md-end">Угол наклона:</div>
+                        <div class="col-md-6 d-flex">
+                            <input type="range" min="5" max="75" value="30" class="slider" id="ugolRange">
+                            <div class="d-flex justify-content-end w-100">
+                                <input id="ugolRangeText" type="text" readonly="" class="form-control"
+                                    style="width: 60px;">
+                                <p style="margin-left: 10px;">
+                                    <sup>°</sup>
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="form-group row" id="ischezni">
+                        <div class="col-md-6 text-md-end">Емкость АКБ:</div>
+                        <div class="col-md-6 d-flex">
+                            <input type="text" readonly="" id="cf-accum" value="4.5" class="form-control">
+                            <p style="padding-left: 10px;">
+                                кВт*ч
+                            </p>
+                        </div>
+                    </div>
+                    <div class="form-group row" id="ischezni2">
+                        <div class="col-md-6 text-md-end">Автономность:</div>
+                        <div class="col-md-6 d-flex flex-column pt-2">
+                            <input type="range" min="0.5" max="3" value="1" step="0.5" class="slider" id="sliderRange3">
+                            <div class="d-flex justify-content-end w-100 pt-1">
+                                <input id="rangeText3" type="text" readonly="" class="form-control">
+                                <p style="margin-left: 10px;">
+                                    дней
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="calc" id="pribors">
+                <div class="input">
+                    <div class="input_title">Приборы</div>
+                    <div class="pribors">
+                        <div class="pribor" data-id="1">
+                            <input type="checkbox" name="p1" class="pribor_switcher" value="1" id="p1">
+                            <!-- <label for="p1"></label> -->
+                            <div class="pribor_name"><label for="p1">Электро лампа</label></div>
+                            <div class="pribor_count pribor_box">
+                                <div class="pribor_label">Кол-во/ шт.</div>
+                                <div class="col-lg-9">
+                                    <input type="range" class="custom-range" value="1.0" min="1.0" max="100.0" step="1"
+                                        name="pc1" id="pc1">
+                                </div>
+                                <div class="col-lg-3">
+                                    <label for="pc1">1</label>
+                                </div>
+                            </div>
+                            <div class="pribor_power pribor_box">
+                                <div class="pribor_label">Мощность ватт</div>
+                                <div class="col-lg-9">
+                                    <input type="range" class="custom-range" value="1.0" min="20.0" max="10000.0"
+                                        step="10" name="pp1" id="pp1">
+                                </div>
+                                <div class="col-lg-3">
+                                    <label for="pp1">20</label>
+                                </div>
+
+                            </div>
+                            <div class="pribor_hour pribor_box">
+                                <div class="pribor_label">Кол-во часов</div>
+                                <div class="col-lg-9">
+                                    <input type="range" class="custom-range" value="1.0" min="1.0" max="24.0" step="1"
+                                        name="ph1" id="ph1">
+                                </div>
+                                <div class="col-lg-3">
+                                    <label for="ph1">1</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pribor" data-id="2">
+                            <input type="checkbox" name="p2" class="pribor_switcher" value="1" id="p2">
+                            <!-- <label for="p2"></label> -->
+                            <div class="pribor_name"><label for="p2">Телевизор</label></div>
+                            <div class="pribor_count pribor_box">
+                                <div class="pribor_label">Кол-во/ шт.</div>
+                                <div class="col-lg-9">
+                                    <input type="range" class="custom-range" value="1.0" min="1.0" max="100.0" step="1"
+                                        name="pc2" id="pc2">
+                                </div>
+                                <div class="col-lg-3">
+                                    <label for="pc2">1</label>
+                                </div>
+                            </div>
+                            <div class="pribor_power pribor_box">
+                                <div class="pribor_label">Мощность ватт</div>
+                                <div class="col-lg-9">
+                                    <input type="range" class="custom-range" value="1.0" min="20.0" max="10000.0"
+                                        step="10" name="pp2" id="pp2">
+                                </div>
+                                <div class="col-lg-3">
+                                    <label for="pp2">20</label>
+                                </div>
+
+                            </div>
+                            <div class="pribor_hour pribor_box">
+                                <div class="pribor_label">Кол-во часов</div>
+                                <div class="col-lg-9">
+                                    <input type="range" class="custom-range" value="1.0" min="1.0" max="24.0" step="1"
+                                        name="ph2" id="ph2">
+                                </div>
+                                <div class="col-lg-3">
+                                    <label for="ph2">1</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pribor" data-id="3">
+                            <input type="checkbox" name="p3" class="pribor_switcher" value="1" id="p3">
+                            <!-- <label for="p3"></label> -->
+                            <div class="pribor_name"><label for="p3">Холодильник</label></div>
+                            <div class="pribor_count pribor_box">
+                                <div class="pribor_label">Кол-во/ шт.</div>
+                                <div class="col-lg-9">
+                                    <input type="range" class="custom-range" value="1.0" min="1.0" max="100.0" step="1"
+                                        name="pc3" id="pc3">
+                                </div>
+                                <div class="col-lg-3">
+                                    <label for="pc3">1</label>
+                                </div>
+                            </div>
+                            <div class="pribor_power pribor_box">
+                                <div class="pribor_label">Мощность ватт</div>
+                                <div class="col-lg-9">
+                                    <input type="range" class="custom-range" value="1.0" min="20.0" max="10000.0"
+                                        step="10" name="pp3" id="pp3">
+                                </div>
+                                <div class="col-lg-3">
+                                    <label for="pp3">20</label>
+                                </div>
+
+                            </div>
+                            <div class="pribor_hour pribor_box">
+                                <div class="pribor_label">Кол-во часов</div>
+                                <div class="col-lg-9">
+                                    <input type="range" class="custom-range" value="1.0" min="1.0" max="24.0" step="1"
+                                        name="ph3" id="ph3">
+                                </div>
+                                <div class="col-lg-3">
+                                    <label for="ph3">1</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pribor" data-id="4">
+                            <input type="checkbox" name="p4" class="pribor_switcher" value="1" id="p4">
+                            <!-- <label for="p4"></label> -->
+                            <div class="pribor_name"><label for="p4">Электро чайник</label></div>
+                            <div class="pribor_count pribor_box">
+                                <div class="pribor_label">Кол-во/ шт.</div>
+                                <div class="col-lg-9">
+                                    <input type="range" class="custom-range" value="1.0" min="1.0" max="100.0" step="1"
+                                        name="pc4" id="pc4">
+                                </div>
+                                <div class="col-lg-3">
+                                    <label for="pc4">1</label>
+                                </div>
+                            </div>
+                            <div class="pribor_power pribor_box">
+                                <div class="pribor_label">Мощность ватт</div>
+                                <div class="col-lg-9">
+                                    <input type="range" class="custom-range" value="1.0" min="20.0" max="10000.0"
+                                        step="10" name="pp4" id="pp4">
+                                </div>
+                                <div class="col-lg-3">
+                                    <label for="pp4">1</label>
+                                </div>
+
+                            </div>
+                            <div class="pribor_hour pribor_box">
+                                <div class="pribor_label">Кол-во часов</div>
+                                <div class="col-lg-9">
+                                    <input type="range" class="custom-range" value="1.0" min="1.0" max="24.0" step="1"
+                                        name="ph4" id="ph4">
+                                </div>
+                                <div class="col-lg-3">
+                                    <label for="ph4">1</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pribor" data-id="5">
+                            <input type="checkbox" name="p5" class="pribor_switcher" value="1" id="p5">
+                            <!-- <label for="p5"></label> -->
+                            <div class="pribor_name"><label for="p5">Микроволновка</label></div>
+                            <div class="pribor_count pribor_box">
+                                <div class="pribor_label">Кол-во/ шт.</div>
+                                <div class="col-lg-9">
+                                    <input type="range" class="custom-range" value="1.0" min="1.0" max="100.0" step="1"
+                                        name="pc5" id="pc5">
+                                </div>
+                                <div class="col-lg-3">
+                                    <label for="pc5">1</label>
+                                </div>
+                            </div>
+                            <div class="pribor_power pribor_box">
+                                <div class="pribor_label">Мощность ватт</div>
+                                <div class="col-lg-9">
+                                    <input type="range" class="custom-range" value="1.0" min="20.0" max="10000.0"
+                                        step="10" name="pp5" id="pp5">
+                                </div>
+                                <div class="col-lg-3">
+                                    <label for="pp5">1</label>
+                                </div>
+
+                            </div>
+                            <div class="pribor_hour pribor_box">
+                                <div class="pribor_label">Кол-во часов</div>
+                                <div class="col-lg-9">
+                                    <input type="range" class="custom-range" value="1.0" min="1.0" max="24.0" step="1"
+                                        name="ph5" id="ph5">
+                                </div>
+                                <div class="col-lg-3">
+                                    <label for="ph5">1</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pribor" data-id="6">
+                            <input type="checkbox" name="p6" class="pribor_switcher" value="1" id="p6">
+                            <!-- <label for="p6"></label> -->
+                            <div class="pribor_name"><label for="p6">Газ. Котель</label></div>
+                            <div class="pribor_count pribor_box">
+                                <div class="pribor_label">Кол-во/ шт.</div>
+                                <div class="col-lg-9">
+                                    <input type="range" class="custom-range" value="1.0" min="1.0" max="100.0" step="1"
+                                        name="pc6" id="pc6">
+                                </div>
+                                <div class="col-lg-3">
+                                    <label for="pc6">1</label>
+                                </div>
+                            </div>
+                            <div class="pribor_power pribor_box">
+                                <div class="pribor_label">Мощность ватт</div>
+                                <div class="col-lg-9">
+                                    <input type="range" class="custom-range" value="1.0" min="20.0" max="10000.0"
+                                        step="10" name="pp6" id="pp6">
+                                </div>
+                                <div class="col-lg-3">
+                                    <label for="pp6">1</label>
+                                </div>
+
+                            </div>
+                            <div class="pribor_hour pribor_box">
+                                <div class="pribor_label">Кол-во часов</div>
+                                <div class="col-lg-9">
+                                    <input type="range" class="custom-range" value="1.0" min="1.0" max="24.0" step="1"
+                                        name="ph6" id="ph6">
+                                </div>
+                                <div class="col-lg-3">
+                                    <label for="ph6">1</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pribor" data-id="7">
+                            <input type="checkbox" name="p7" class="pribor_switcher" value="1" id="p7">
+                            <!-- <label for="p7"></label> -->
+                            <div class="pribor_name"><label for="p7">циркул. Насос</label></div>
+                            <div class="pribor_count pribor_box">
+                                <div class="pribor_label">Кол-во/ шт.</div>
+                                <div class="col-lg-9">
+                                    <input type="range" class="custom-range" value="1.0" min="1.0" max="100.0" step="1"
+                                        name="pc7" id="pc7">
+                                </div>
+                                <div class="col-lg-3">
+                                    <label for="pc7">1</label>
+                                </div>
+                            </div>
+                            <div class="pribor_power pribor_box">
+                                <div class="pribor_label">Мощность ватт</div>
+                                <div class="col-lg-9">
+                                    <input type="range" class="custom-range" value="1.0" min="20.0" max="10000.0"
+                                        step="10" name="pp7" id="pp7">
+                                </div>
+                                <div class="col-lg-3">
+                                    <label for="pp7">1</label>
+                                </div>
+
+                            </div>
+                            <div class="pribor_hour pribor_box">
+                                <div class="pribor_label">Кол-во часов</div>
+                                <div class="col-lg-9">
+                                    <input type="range" class="custom-range" value="1.0" min="1.0" max="24.0" step="1"
+                                        name="ph7" id="ph7">
+                                </div>
+                                <div class="col-lg-3">
+                                    <label for="ph7">1</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="pribor" data-id="8">
+                            <input type="checkbox" name="p8" class="pribor_switcher" value="1" id="p8">
+                            <!-- <label for="p8"></label> -->
+                            <div class="pribor_name"><label for="p8">Компьютер</label></div>
+                            <div class="pribor_count pribor_box">
+                                <div class="pribor_label">Кол-во/ шт.</div>
+                                <div class="col-lg-9">
+                                    <input type="range" class="custom-range" value="1.0" min="1.0" max="100.0" step="1"
+                                        name="pc8" id="pc8">
+                                </div>
+                                <div class="col-lg-3">
+                                    <label for="pc8">1</label>
+                                </div>
+                            </div>
+                            <div class="pribor_power pribor_box">
+                                <div class="pribor_label">Мощность ватт</div>
+                                <div class="col-lg-9">
+                                    <input type="range" class="custom-range" value="1.0" min="20.0" max="10000.0"
+                                        step="10" name="pp8" id="pp8">
+                                </div>
+                                <div class="col-lg-3">
+                                    <label for="pp8">1</label>
+                                </div>
+
+                            </div>
+                            <div class="pribor_hour pribor_box">
+                                <div class="pribor_label">Кол-во часов</div>
+                                <div class="col-lg-9">
+                                    <input type="range" class="custom-range" value="1.0" min="1.0" max="24.0" step="1"
+                                        name="ph8" id="ph8">
+                                </div>
+                                <div class="col-lg-3">
+                                    <label for="ph8">1</label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="df">
+                        <div class="emkost_bat">Емкость аккумуляторных батарей <b>0</b> A.</div>
+                        <div class="pribors_summa"> Средная нагрузка <b>0</b> Квт.час / сутки</div>
+                    </div>
+                    <hr>
+                </div>
+            </div>
+            <div class="row mb-5">
+                <div class="col-md-12">
+                    <p>Внимание! Результаты просчета, такие как выработка станции и ее стоимость являются
+                        ознакомительными. Для
+                        получения более точного прогноза выработки и коммерческого предложения по Вашей солнечной
+                        электростанции,
+                        пожалуйста, обращайтесь к нашим менеджерам.</p>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer id="footer" class="pt-4">
+        <div class="container">
+            <div class="row d-flex align-items-center">
+                <div class="col-12 col-md-6 col-lg-3 text-center">
+                    <a href="/"><img src="/images/logo.png" alt="Logo"></a>
+                </div>
+                <div class="py-3 col-12 col-md-6 col-lg-6 text-center">
+                    <h1>Muqobil energiya</h1>
+                </div>
+                <div class="py-3 col-12 col-lg-3">
+                    <div class="footer__contact">
+                        <a href="tel:+998-99-353-23-70" class="footer__contactItem footer__contactPhone">
+                            <i class="fa-solid fa-phone"></i>
+                            <p>+998 99 897 45 04</p>
+                        </a>
+                        <a href="mailto:info@talpa.uz" class="footer__contactItem footer__contactMail">
+                            <i class="fa-solid fa-envelope"></i>
+                            <p>support@teh-company.com</p>
+                        </a>
+                        <a href="/" class="footer__contactItem footer__contactLocation">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p>г.Ташкент, Т Урикзар "Стройгород" 3 блок, 1179-магазин.</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="line"></div>
+        <div class="container">
+            <div class="d-flex flex-wrap justify-content-between align-items-center py-3">
+                <p>© 2022 Teh-company.</p>
+                <div>
+                    <span>Developed by </span><a href="https://www.linkedin.com/in/davron-qodirov-a2a8b3196/">Davron</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="/javascript/script.js"></script>
+    <script src="/javascript/swiper.js"></script>
+    <script src="/javascript/dashboard.js"></script>
+</body>
+
+</html>
