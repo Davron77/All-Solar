@@ -930,6 +930,10 @@ footer p {
   gap: 15px;
 }
 
+.contact-page .footer__contact i {
+  color: var(--red);
+}
+
 .footer__contact i {
   font-size: 18px;
   color: var(--white);
@@ -1036,7 +1040,35 @@ footer p {
 
 .product-image {
   width: 100%;
-  background-color: var(--dark-black);
+  height: 430px;
+  display: flex;
+  flex-direction: row-reverse;
+  gap: 40px;
+  background-color: var(--white);
+}
+
+.product_img {
+  width: 30px;
+}
+
+.thumbs_slider {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.product_img .swiper-wrapper {
+  width: 30px;
+}
+
+.swiper-slide {
+  width: 30px;
+  height: 30px;
+}
+
+.thumbs_slider_img {
+  width: 30px;
+  height: 30px;
 }
 
 .product-contact {
@@ -1073,7 +1105,7 @@ footer p {
 .product-contact-item {
   width: 48px;
   height: 48px;
-  background-color: var(--dark-black);
+  background-color: var(--red);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -1082,6 +1114,7 @@ footer p {
 
 .product-contact-link i {
   font-size: 18px;
+  color: var(--white);
 }
 
 .product-price h3 {
@@ -1147,16 +1180,13 @@ footer p {
 .card-page-card-input {
   width: 200px;
   height: 48px;
-  background-color: var(--dark-black);
+  background-color: var(--white);
   border-radius: 2px;
-}
-
-.card-page-card-input input {
-  background-color: var(--dark-black);
 }
 
 .card-page-card-counter-btn {
   width: 48px;
+  background-color: var(--red);
   color: white;
 }
 
@@ -1192,15 +1222,25 @@ footer p {
 }
 
 .card-page-card-price-icons .fa-copy {
-  color: var(--dark-black);
+  color: var(--red);
 }
 
 .card-page-card-price-icons .fa-trash {
   color: var(--red);
 }
 
+.btn-card-model,
+.btn-model-cart {
+  background-color: var(--red);
+  color: var(--white);
+}
+
+.btn-card-model:hover {
+  color: var(--white);
+}
+
 .card-page-order {
-  border: 1px solid #e32735;
+  border: 1px solid var(--red);
   border-radius: 4px;
   padding: 20px;
 }
@@ -1209,7 +1249,7 @@ footer p {
   font-weight: 600;
   font-size: 16px;
   line-height: 19px;
-  color: #e32735;
+  color: var(--red);
 }
 
 .card-page-order-info-item {
@@ -1233,14 +1273,10 @@ footer p {
 
 /* NEWS PAGE START */
 
-#news-home {
-  background-color: var(--dark-black);
-}
-
 .news-page,
 .contact-page {
-  background-color: var(--dark-black);
-  color: white;
+  background-color: var(--dark-white);
+  color: black;
 }
 
 .news-page-card {
@@ -1262,7 +1298,6 @@ footer p {
   font-size: 16px;
   line-height: 22px;
   letter-spacing: 0.02em;
-  color: rgba(245, 245, 247, 0.8);
 }
 
 .news-page-btn i {
@@ -1313,6 +1348,8 @@ footer p {
   width: 203px;
   height: 47px;
   text-align: center;
+  background-color: var(--red);
+  color: var(--white);
 }
 
 /* CONTACT PAGE END */
