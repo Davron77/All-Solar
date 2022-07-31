@@ -1639,8 +1639,6 @@ footer p {
 }
 
 .pribors {
-  max-height: 400px;
-  overflow: auto;
   padding-top: 20px;
 }
 
@@ -1682,7 +1680,121 @@ footer p {
   font-size: 24px;
 }
 
-/* CALCULATOR PAGE START */
+select {
+  background-color: #e9ecef !important;
+}
+
+/* CALCULATOR PAGE END */
+
+/* VACANSIES PAGE START */
+
+#vacansies-home {
+  height: 100vh;
+}
+
+.vacansies-banner {
+  height: calc(100vh - 300px);
+  display: flex;
+  align-items: center;
+}
+
+.vacansies-banner h1 {
+  text-transform: uppercase;
+  font-size: 50px;
+  line-height: 65px;
+  font-weight: 600;
+  color: #000;
+  letter-spacing: -0.3px;
+}
+
+.vacansies-banner h1 span {
+  color: var(--red);
+}
+
+.vacansies-banner img {
+  width: 100%;
+}
+
+.job-box {
+  background-color: #fff;
+  clear: both;
+  margin-bottom: 30px;
+  overflow: hidden;
+  padding: 30px 0;
+  position: relative;
+  border-bottom: 1px solid #ccc;
+}
+
+.job-title {
+  text-transform: capitalize;
+  color: #242424;
+  font-size: 20px;
+  font-weight: 600;
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  -moz-transition: all 0.3s ease-in-out 0s;
+  -o-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.comp-name {
+  text-transform: capitalize;
+  color: #242424;
+  font-size: 14px;
+}
+
+.comp-logo img {
+  height: 45px;
+}
+
+.jt-remote-color {
+  color: #46af4a;
+}
+
+.jt-full-time-color {
+  color: #d3b940;
+}
+
+.jt-intern-color {
+  color: #9d27b3;
+}
+
+.jt-part-time-color {
+  color: #ff5a00;
+}
+
+.job-type {
+  font-size: 14px;
+  line-height: 45px;
+  font-weight: 600;
+}
+
+.btn-custom {
+  background-color: var(--red);
+  color: var(--white);
+  font-weight: 600;
+  padding: 10px 20px;
+  border-radius: 0;
+  font-size: 14px;
+  text-transform: uppercase;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease- 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.btn-custom:hover {
+  background-color: transparent;
+  border: 1px solid var(--red);
+  color: var(--red);
+}
+
+.comp-logo {
+  padding: 5px;
+  margin: 0 auto;
+  display: table;
+}
+
+/* VACANSIES PAGE END */
 
 /* BODY END */
 
@@ -1766,6 +1878,10 @@ footer p {
   }
   .about_son button {
     font-size: 18px;
+  }
+  .vacansies-banner h1 {
+    font-size: 26px !important;
+    line-height: 38px !important;
   }
 }
 
@@ -1978,6 +2094,9 @@ footer p {
   .calc .input .pribor {
     flex-wrap: wrap;
   }
+  .vacansies-banner {
+    height: calc(100vh - 170px);
+  }
 }
 
 @media (max-width: 1199.98px) {
@@ -2001,6 +2120,10 @@ footer p {
   .page-title h3 {
     font-size: 28px;
     line-height: 40px;
+  }
+  .vacansies-banner h1 {
+    font-size: 36px;
+    line-height: 56px;
   }
 }
 /* MEDIA QUERIE END */
