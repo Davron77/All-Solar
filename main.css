@@ -1711,7 +1711,6 @@ select {
 }
 
 .job-box {
-  background-color: #fff;
   clear: both;
   margin-bottom: 30px;
   overflow: hidden;
@@ -1790,6 +1789,88 @@ select {
 }
 
 /* VACANSIES PAGE END */
+
+/* VACANSIES SINGLE PAGE START */
+
+.sb-border-two {
+  border-bottom: 1px solid #e2e4ea;
+  padding-bottom: 70px;
+  margin-bottom: 70px;
+}
+
+.employer-head-info {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+.employer-head-info .employer-logo {
+  text-align: center;
+  padding: 10px;
+  margin-right: 28px;
+  margin-bottom: 15px;
+  border-radius: 0;
+  overflow: hidden;
+}
+
+.employer-head-info .employer-content .employer-name {
+  font-size: 34px;
+  line-height: 45px;
+  text-transform: capitalize;
+  font-weight: 700;
+  margin-top: 30px;
+  margin-bottom: 0;
+}
+
+.employer-head-info .employer-content .employer-rate {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-bottom: 10px;
+}
+
+.employer-head-info .employer-content .employer-rate .star {
+  color: #ffbf02;
+  margin-right: 10px;
+}
+
+.theme-color {
+  color: #1dae0e;
+}
+
+.employer-head-info .employer-content .employer-meta {
+  margin-top: 10px;
+  display: flex;
+}
+
+ul {
+  list-style: outside none none;
+  margin: 0;
+  padding: 0;
+}
+
+.employer-head-info .employer-content .employer-meta li {
+  display: inline-block;
+  margin-right: 10px;
+  padding-right: 10px;
+  margin-bottom: 7px;
+  position: relative;
+  font-size: 14px;
+  line-height: 16px;
+  border-right: 1px solid #ccc;
+}
+
+.employer-head-info .employer-content .employer-meta li:last-child {
+  margin-right: 0;
+  padding-right: 0;
+  border-right: 0;
+}
+
+/* VACANSIES SINGLE PAGE END */
 
 /* BODY END */
 
@@ -1877,6 +1958,10 @@ select {
   .vacansies-banner h1 {
     font-size: 26px !important;
     line-height: 38px !important;
+  }
+  .employer-head-info {
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
   }
 }
 
