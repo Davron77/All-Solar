@@ -1641,7 +1641,6 @@ footer p {
   display: flex;
   flex-wrap: nowrap;
   justify-content: space-between;
-  opacity: 0.5;
   -webkit-transition: ease 0.5s;
   -o-transition: ease 0.5s;
   transition: ease 0.5s;
