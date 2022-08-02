@@ -273,32 +273,33 @@
                             <div class="pribor_count pribor_box">
                                 <div class="pribor_label">Кол-во/ шт.</div>
                                 <div class="col-lg-9">
-                                    <input type="range" class="custom-range" value="1" min="1" max="100" step="1"
-                                        name="pc1" onchange="updateTextInput(this.value);" id=" pc1">
+                                    <input type="range" class="custom-range" step="1" name="ageInputName"
+                                        id="ageInputId" value="24" min="1" max="100"
+                                        oninput="ageOutputId.value = ageInputId.value">
                                 </div>
                                 <div class="col-lg-3">
-                                    <label for="pc1">1</label>
+                                    <output name="ageOutputName" id="ageOutputId">24</output>
                                 </div>
                             </div>
                             <div class="pribor_power pribor_box">
                                 <div class="pribor_label">Мощность ватт</div>
                                 <div class="col-lg-9">
-                                    <input type="range" class="custom-range" value="1.0" min="20.0" max="10000.0"
-                                        step="10" name="pp1" id="pp1">
+                                    <input type="range" class="custom-range" min="1" max="100" name="ageInputName1"
+                                        id="ageInputId1" value="24" oninput="ageOutputId1.value = ageInputId1.value">
                                 </div>
                                 <div class="col-lg-3">
-                                    <label for="pp1">20</label>
+                                    <output name="ageOutputName1" id="ageOutputId1">24</output>
                                 </div>
 
                             </div>
                             <div class="pribor_hour pribor_box">
                                 <div class="pribor_label">Кол-во часов</div>
                                 <div class="col-lg-9">
-                                    <input type="range" class="custom-range" value="1.0" min="1.0" max="24.0" step="1"
-                                        name="ph1" id="ph1">
+                                    <input type="range" class="custom-range" min="1" max="100" name="ageInputName2"
+                                        id="ageInputId2" value="24" oninput="ageOutputId2.value = ageInputId2.value">
                                 </div>
                                 <div class="col-lg-3">
-                                    <label for="ph1">1</label>
+                                    <output name="ageOutputName2" id="ageOutputId2">24</output>
                                 </div>
                             </div>
                         </div>
