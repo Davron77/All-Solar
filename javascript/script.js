@@ -62,3 +62,15 @@ bgDark.addEventListener("click", function () {
   cardAccount.classList.remove("catalog-menu-open-scale");
   bgDark.classList.remove("Open__displayBlock");
 });
+
+function myFunction() {
+  var inputRang = document.getElementById("pc1").value;
+  document.getElementById("demo").innerHTML = inputRang;
+
+  console.log("inputRang", inputRang);
+}
+
+function updateTextInput(val) {
+  document.getElementById("textInput").value = val;
+  console.log("val", val);
+}

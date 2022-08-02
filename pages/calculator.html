@@ -120,7 +120,7 @@
         </header>
     </div>
     </div>
-    <main>
+    <main class="page_wrapper">
         <div class="container">
             <h1 class="calculator_title my-5">КАЛЬКУЛЯТОР</h1>
             <div class="row">
@@ -273,8 +273,8 @@
                             <div class="pribor_count pribor_box">
                                 <div class="pribor_label">Кол-во/ шт.</div>
                                 <div class="col-lg-9">
-                                    <input type="range" class="custom-range" value="1.0" min="1.0" max="100.0" step="1"
-                                        name="pc1" id="pc1">
+                                    <input type="range" class="custom-range" value="1" min="1" max="100" step="1"
+                                        name="pc1" onchange="updateTextInput(this.value);" id=" pc1">
                                 </div>
                                 <div class="col-lg-3">
                                     <label for="pc1">1</label>
