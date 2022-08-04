@@ -31,21 +31,9 @@ const navbarToggler = document
 let ClasscardRegister = false;
 
 user.addEventListener("click", function () {
-  if (ClasscardRegister) {
-    cardLogin.classList.remove("catalog-menu-open-scale");
-    //cardAccount.classList.toggle("catalog-menu-open-scale");
-    cardRegister.classList.remove("catalog-menu-open-scale");
-    bgDark.classList.remove("Open__displayBlock");
-    console.log(ClasscardRegister);
-    ClasscardRegister = false;
-  } else {
-    cardLogin.classList.toggle("catalog-menu-open-scale");
-    //cardAccount.classList.toggle("catalog-menu-open-scale");
-    cardRegister.classList.remove("catalog-menu-open-scale");
-    bgDark.classList.toggle("Open__displayBlock");
-    user.classList.toggle("header-user-show");
-    console.log(ClasscardRegister);
-  }
+  cardAccount.classList.toggle("card__account_open");
+  bgDark.classList.toggle("Open__displayBlock");
+  // }
 });
 
 if (catalogBtn) {
@@ -57,9 +45,7 @@ if (catalogBtn) {
 }
 
 bgDark.addEventListener("click", function () {
-  cardRegister.classList.remove("catalog-menu-open-scale");
-  cardLogin.classList.remove("catalog-menu-open-scale");
-  cardAccount.classList.remove("catalog-menu-open-scale");
+  cardAccount.classList.remove("card__account_open");
   bgDark.classList.remove("Open__displayBlock");
 });
 
