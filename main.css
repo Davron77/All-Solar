@@ -1948,6 +1948,101 @@ ul {
 
 /* VACANSIES SINGLE PAGE END */
 
+/* SERVICE PAGE START */
+
+.service_banner {
+  height: calc(100vh - 170px);
+}
+
+.service_banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.service_card_item {
+  text-align: center;
+  margin: 25px 0;
+}
+
+.service_card_item img {
+  width: 80px;
+  height: 80px;
+}
+
+.service_card_item h4 {
+  padding-top: 20px;
+  margin: 0;
+  font-size: 24px;
+  color: var(--red);
+}
+
+.service_contact_item {
+  display: flex;
+  gap: 35px;
+}
+
+.service_contact_item div:nth-child(1) {
+  background: var(--red);
+  width: 65px;
+  height: 65px;
+  -webkit-transform: rotate(45deg);
+  -moz-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg);
+  border-radius: 10px;
+}
+
+.service_contact_item i {
+  height: 100%;
+  width: 65px;
+  display: flex;
+  justify-content: center;
+  font-size: 30px;
+  line-height: 65px;
+  -webkit-transform: rotate(-45deg);
+  -moz-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+  color: #ffffff;
+}
+
+.service_contact_text p {
+  margin: 0;
+}
+
+.service_contact_text h6 {
+  margin: 10px;
+  text-transform: uppercase;
+  font-size: 13px;
+  letter-spacing: 0.6px;
+  margin: 10px 0px;
+  font-weight: bold;
+}
+
+.service_img_items {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 30px;
+}
+
+.service_img_item {
+  overflow: hidden;
+}
+
+.service_img_item img {
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition: 0.3s ease-in-out;
+  transition: 0.3s ease-in-out;
+}
+
+.service_img_item img:hover {
+  transform: scale(1.2);
+}
+
+/* SERVICE PAGE END */
+
 /* BODY END */
 
 @media (min-width: 576px) {
@@ -2141,6 +2236,9 @@ ul {
   .job-box {
     height: 190px;
   }
+  .service_img_items {
+    grid-template-columns: repeat(1, minmax(0, 1fr));
+  }
 }
 
 @media (max-width: 991.98px) {
@@ -2283,6 +2381,9 @@ ul {
   }
   .card__account_open {
     bottom: -150px;
+  }
+  .service_contact_item {
+    margin: 30px 0;
   }
 }
 

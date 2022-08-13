@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TEH</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="/library/uikit/uikit.min.css" />
+    <!-- ONLY CSS -->
+    <link rel="stylesheet" href="/main.css">
+</head>
+
+<body>
+    <div id="index-home">
+        <div id="bg-dark">
+        </div>
+        <div id="HeaderFooter" class="header__footer">
+            <div class="container">
+                <div class="row justify-content-between">
+                    <div class="col-10 order-lg-1 col-lg-9 col-xl-6">
+                        <div class="header-footer__contact">
+                            <div class="weather">
+                                <img src="/images/weather.png" alt="">
+                                <span>31</span><span>°C</span>
+                            </div>
+                            <div class="footer__line">
+                                <span></span>
+                            </div>
+                            <a href="mailto:info@talpa.uz" class="header-footer__contactItem footer__contactMail">
+                                <i class="fa-solid fa-envelope"></i>
+                                <p>support@teh-company.com</p>
+                            </a>
+                            <div class="footer__line">
+                                <span></span>
+                            </div>
+                            <a href="tel:+998-99-353-23-70" class="header-footer__contactItem footer__contactPhone">
+                                <i class="fa-solid fa-phone"></i>
+                                <p>+998 99 897 45 04</p>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="col-2 col-lg-3 col-xl-2">
+                        <div class="footer__socials">
+                            <a href="https://www.facebook.com/" target="_blank"><i
+                                    class="fa-brands fa-facebook"></i></a>
+                            <a href="https://www.instagram.com/" target="_blank"><i
+                                    class="fa-brands fa-instagram"></i></a>
+                            <a href="https://www.youtube.com/" target="_blank"><i class="fa-brands fa-youtube"></i></a>
+
+                            <div class="dropdown">
+                                <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton2"
+                                    data-bs-toggle="dropdown" aria-expanded="false">UZ </button>
+                                <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+                                    <li><a class="dropdown-item" href="#">RU</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <header id="header">
+            <div class="container">
+                <nav class="navbar navbar-expand-lg">
+                    <div class="row w-100 justify-content-between align-items-center">
+                        <div class="col-2 order-lg-1 col-lg-9 col-xl-10 sm-p-0">
+                            <button id="navbar-toggler" class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false"
+                                aria-label="Toggle navigation">
+                                <div class="navbar-bars__icons">
+                                    <i class="fa-solid fa-bars"></i>
+                                    <i class="fa-solid fa-xmark navbar-bars__icons__hide"></i>
+                                </div>
+                            </button>
+                            <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+                                <div class="navbar-nav w-100">
+                                    <a class="nav-link" href="/pages/about.html">ABOUT</a>
+                                    <a class="nav-link" href="/pages/products.html">PRODUCTS</a>
+                                    <a class="nav-link" href="/pages/portfolios.html">PORTFOLIOS</a>
+                                    <a class="nav-link" href="/pages/news.html">NEWS</a>
+                                    <a class="nav-link" href="/pages/vacansies.html">VACANSIES</a>
+                                    <a class="nav-link" href="/pages/calculator.html">CALCULATOR</a>
+                                    <a class="nav-link" href="/pages/contact.html">CONTACT</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-8 col-lg-2 col-xl-1 text-center text-lg-start p-0">
+                            <a class="navbar-brand" href="/"><img src="/images/logo_light.png" alt="Logo"></a>
+                        </div>
+                        <div class="col-2 order-lg-2 col-lg-1 col-xl-1 p-0">
+                            <div class="navbar-left">
+                                <div class="navbar-icon__login ms-xl-4">
+                                    <a class="navbar-icon__loginItem" href="/pages/card.html"><i
+                                            class="fa-solid fa-bag-shopping"></i></a>
+                                    <a id="user" class="navbar-icon__loginItem" href="#"><i
+                                            class="fa-solid fa-user"></i></a>
+                                </div>
+                                <div class="navbar-dropdown">
+                                    <button class="btn btn-secondary dropdown-toggle" type="button"
+                                        id="dropdownMenuButton2" data-bs-toggle="dropdown" aria-expanded="false">UZ
+                                    </button>
+                                    <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="dropdownMenuButton2">
+                                        <li><a class="dropdown-item" href="#">RU</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </nav>
+            </div>
+        </header>
+        <div class="service_banner">
+            <img src="/images/service.jpg" alt="">
+        </div>
+    </div>
+    </div>
+    <main>
+        <div class="container">
+            <div class="row">
+                <div class="col-12 my-5">
+                    <h1>Сервисный центр</h1>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 col-sm-6 col-lg-3 service_card_item">
+                    <img src="/images/service-page/1.png" alt="">
+                    <h4>Гарантия</h4>
+                    <p>Тестирование готовых устройств в присутствии клиента, «снабжение» гарантиями на ремонт</p>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3 service_card_item">
+                    <img src="/images/service-page/2.png" alt="">
+                    <h4>Гарантия</h4>
+                    <p>Тестирование готовых устройств в присутствии клиента, «снабжение» гарантиями на ремонт</p>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3 service_card_item">
+                    <img src="/images/service-page/3.png" alt="">
+                    <h4>Гарантия</h4>
+                    <p>Тестирование готовых устройств в присутствии клиента, «снабжение» гарантиями на ремонт</p>
+                </div>
+                <div class="col-12 col-sm-6 col-lg-3 service_card_item">
+                    <img src="/images/service-page/4.png" alt="">
+                    <h4>Гарантия</h4>
+                    <p>Тестирование готовых устройств в присутствии клиента, «снабжение» гарантиями на ремонт</p>
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-12 text-center my-5">
+                    <h2>Сервисный центр All Solar предлагает услуги ремонта. У нас работают опытные и квалифицированные
+                        мастера с опытом многих
+                        лет. В сервисном центре All Solar вы можете отремонтировать любые устройства работающие на
+                        солнечной энергии. Также у
+                        нас имеется 2 машины и выезд по Узбекистану!</h2>
+                </div>
+            </div>
+            <div class="row my-5">
+                <div class="col-12 col-lg-4 service_contact_item">
+                    <div><i class="fa-solid fa-location-dot"></i></div>
+                    <div class="service_contact_text">
+                        <h6>Адрес</h6>
+                        <p>Малая кольцевая 8А
+                            г.Ташкент, Узбекистан</p>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 service_contact_item">
+                    <div><i class="fa-solid fa-envelope"></i></div>
+                    <div class="service_contact_text">
+                        <h6>E-mail</h6>
+                        <p><a href="mailto:service@all-solar.uz">service@all-solar.uz</a></p>
+                    </div>
+                </div>
+                <div class="col-12 col-lg-4 service_contact_item">
+                    <div><i class="fa-solid fa-phone"></i></div>
+                    <div class="service_contact_text">
+                        <h6>Телефон</h6>
+                        <p><a href="tel:+998 94 196 06 05">+998 94 196 06 05</a></p>
+
+                    </div>
+                </div>
+            </div>
+            <div class="service_img_items my-5">
+                <div class="service_img_item">
+                    <img src="/images/service-page/5.jpg" alt="">
+                </div>
+                <div class="service_img_item">
+                    <img src="/images/service-page/6.jpg" alt="">
+                </div>
+                <div class="service_img_item">
+                    <img src="/images/service-page/7.jpg" alt="">
+                </div>
+                <div class="service_img_item">
+                    <img src="/images/service-page/8.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer id="footer" class="pt-4">
+        <div class="container">
+            <div class="row d-flex align-items-center">
+                <div class="col-12 col-md-6 col-lg-3 text-center">
+                    <a href="/"><img src="/images/logo.png" alt="Logo"></a>
+                </div>
+                <div class="py-3 col-12 col-md-6 col-lg-6 text-center">
+                    <h1>Muqobil energiya</h1>
+                </div>
+                <div class="py-3 col-12 col-lg-3">
+                    <div class="footer__contact">
+                        <a href="tel:+998-99-353-23-70" class="footer__contactItem footer__contactPhone">
+                            <i class="fa-solid fa-phone"></i>
+                            <p>+998 99 897 45 04</p>
+                        </a>
+                        <a href="mailto:info@talpa.uz" class="footer__contactItem footer__contactMail">
+                            <i class="fa-solid fa-envelope"></i>
+                            <p>support@teh-company.com</p>
+                        </a>
+                        <a href="/" class="footer__contactItem footer__contactLocation">
+                            <i class="fa-solid fa-location-dot"></i>
+                            <p>г.Ташкент, Т Урикзар "Стройгород" 3 блок, 1179-магазин.</p>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="line"></div>
+        <div class="container">
+            <div class="d-flex flex-wrap justify-content-between align-items-center py-3">
+                <p>© 2022 Teh-company.</p>
+                <div>
+                    <span>Developed by </span><a href="https://www.linkedin.com/in/davron-qodirov-a2a8b3196/">Davron</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/library/countUp.js"></script>
+    <script src="/library/uikit/uikit.min.js"></script>
+    <script src="/library/uikit/uikit-icons.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p"
+        crossorigin="anonymous"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="/javascript/script.js"></script>
+    <script src="/javascript/swiper.js"></script>
+</body>
+
+</html>
